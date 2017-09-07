@@ -8,7 +8,7 @@ function show(json){
     json.forEach(elm=>{
         let clone = template.cloneNode(true);
         clone.querySelector('.poster').src = "image/" + elm.image;
-        clone.querySelector('.title').textContent = "Title: " + elm.title;
+        clone.querySelector('.title').textContent = elm.title;
         clone.querySelector('.year').textContent = "Year: " + elm.year;
         clone.querySelector('.length').textContent = elm.length + ". minutes";
         clone.querySelector('.genres').textContent = "Genres: " + elm.genres;
